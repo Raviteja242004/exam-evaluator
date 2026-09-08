@@ -256,7 +256,7 @@ def call_gemini_evaluation(api_key: str, key_image: Image.Image, sheet_image: Im
     client = genai.Client(api_key=api_key)
 
     response = client.models.generate_content(
-        model="gemini-2.5-flash",
+        model="gemini-3.6-flash",
         contents=[
             "IMAGE 1 — OFFICIAL ANSWER KEY:",
             key_image,
